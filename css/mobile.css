@@ -1,0 +1,26 @@
+
+.navigation-list,
+.contacts {
+    display: none;
+}
+
+.feutures-icon-fon,
+.work {
+    display: none;
+}
+
+/* @media screen and (max-width: 480px) {
+
+    .navigation-list,
+    .contacts {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .feutures-icon-fon,
+    .work {
+        display: none;
+    }
+} */

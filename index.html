@@ -8,7 +8,10 @@
   <title>WebStudio</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles-mobile.css" />
+  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 480px)">
+  <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./css/desctop.css" media="screen and (max-width 1200px)">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -41,6 +44,9 @@
           </li>
         </ul>
       </address>
+      <button type="button" class="menu-open button"><svg width="32" height="22">
+          <use href="./images/icons.svg#icon-menu-btn"></use>
+        </svg></button>
     </div>
   </header>
 
@@ -51,7 +57,6 @@
         <button type="button" class="hero-btn button" data-modal-open>Order Service</button>
       </div>
     </section>
-
     <section class="feutures">
       <div class="container">
         <h2 class="feutures-title visually-hidden">about us</h2>
@@ -164,7 +169,7 @@
             <img src="./images/img_2.jpg" alt="photo Ford" width="264" />
             <div class="team-socials">
               <h3 class="team-subtitle">Tom Ford</h3>
-              <p class="tem-text">Frontend Developer</p>
+              <p class="team-text">Frontend Developer</p>
               <ul class="team-soc-list list">
                 <li class="soc-item">
                   <a href="" class="soc-link"><svg class="team-social-icon" width="16" height="16">
@@ -256,7 +261,7 @@
     </section>
     <section class="client-section">
       <div class="container">
-        <h2 class="clients">Customers</h2>
+        <h2 class="clients-title">Customers</h2>
         <ul class="client-list list">
           <li class="client-list-item">
             <a href="" class="client-link"><svg class="client-logo" width="104" height="56">
