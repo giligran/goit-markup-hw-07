@@ -1,0 +1,132 @@
+:root {
+    --slate-color: #434455;
+    --navy-blue: #2E2F42;
+    --primiry-background: #2E2F42;
+    --secondary-background: #F4F4FD;
+    --iris-color: #4D5AE5;
+    --ocean-color: #404BBF;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+
+.container {
+    max-width: 1160px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* header */
+
+.header>.container {
+    align-items: center;
+    min-height: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+} 
+
+.header-logo {
+    line-height: 1.33;
+}
+
+.navigation-list {
+    margin-left: 76px;
+}
+
+.current::after {
+    bottom: -27px;
+}
+
+.contacts-list {
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* main */
+    /* hero */
+.hero {
+    max-width: 1440px;
+    min-height: 600px;
+    padding: 188px 0px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg@1x-1440.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg@2x-2880.jpg');
+    }
+}
+
+.hero-title {
+    margin-bottom: 48px;
+}
+
+/* feutures  */
+
+.feutures>.container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.feutures-list {
+    gap: 0 24px;
+}
+
+.feutures-icon {
+    display: block;
+}
+
+.feutures-part {
+    max-width: calc((100% - 72px) / 4);
+}
+
+.feutures-icon-fon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    background: var(--secondary-background);
+    border-radius: 4px;
+}
+
+/* work */
+
+.work {
+    display: block;
+    padding-bottom: 120px;
+}
+
+.work-list {
+    display: flex;
+    gap: 24px; 
+    justify-content: center;
+}
+
+.work-list-item {
+    max-width: calc((100% - 48) / 3);
+}
+
+/* clients */
+
+.clients>.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.client-list-item {
+    max-width: calc((100% - 120px) / 6) ;
+}
+
+/* footer  */
+
+.footer>.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.footer-form {
+    margin-left: 80px;
+}

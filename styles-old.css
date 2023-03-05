@@ -269,11 +269,8 @@ header {
 .feutures {
     padding-top: 120px;
     padding-bottom: 120px;
+}
 
-}
-.work {
-    padding-bottom: 120px;
-}
 .team {padding-top: 120px;
     padding-bottom: 120px;
     background-color: var(--secondary-background); 
@@ -668,7 +665,6 @@ background-color: #31D0AA;
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
-
 }
 
 .is-hidden {
@@ -764,7 +760,7 @@ color: #8E8F99;
     background-color: var(--ocean-color);
 }
 
-.form label{
+.form-field>label{
     font-size: 12px;
 }
 

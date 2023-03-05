@@ -9,17 +9,16 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 480px)">
-  <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width: 768px)">
-  <link rel="stylesheet" href="./css/desctop.css" media="screen and (max-width 1200px)">
+  <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./css/desctop.css" media="screen and (min-width: 1200px)">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="container header">
+  <header class="header">
+    <div class="container">
       <nav class="navigation">
         <a href="./index.html" class="header-logo link"><span class="logo">Web</span>Studio </a>
         <ul class="navigation-list list">
@@ -44,9 +43,11 @@
           </li>
         </ul>
       </address>
-      <button type="button" class="menu-open"><svg width="32" height="22">
-          <use href="./images/icons.svg#icon-menu-btn"></use>
-        </svg></button>
+      <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg
+          width="32" height="22" aria-label="menu's button open">
+          <use href="./images/icons.svg#icon-menu-btn" class="icon-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -117,13 +118,16 @@
         <h2 class="work-title">What are we doing</h2>
         <ul class="work-list list">
           <li class="work-list-item">
-            <img src="./images/Rectangle71.jpg" alt="computer" width="360" />
+            <img srcset="./images/work-1@1x-360.jpg 360w, ./images/work-1@2x-720.jpg 720w" sizes="360px"
+              src="./images/work-1@1x-360.jpg" alt="computer" width="360" />
           </li>
           <li class="work-list-item">
-            <img src="./images/img2.jpg" alt="smartphone" width="360" />
+            <img srcset="./images/work@1x-360.jpg 360w, ./images/work@2x-720.jpg 720w" sizes="360px"
+              src="./images/work@1x-360.jpg" alt="smartphone" width="360" />
           </li>
           <li class="work-list-item">
-            <img src="./images/img3.jpg" alt="smartphone" width="360" />
+            <img srcset="./images/work-3@1x-360.jpg 360w, ./images/work-3@2x-720.jpg 720w" sizes="360px"
+              src="./images/work-3@1x-360.jpg" alt="smartphone" width="360" />
           </li>
         </ul>
       </div>
@@ -133,8 +137,9 @@
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list list">
           <li class="team-list-item">
+            <img srcset="./images/Mark@1x-264.jpg 264w, ./images/Mark@2x-528.jpg 528w" sizes="264px"
+              src="./images/Mark@1x-264.jpg" alt="Mark's photo">
             <div class="team-socials">
-              <img src="./images/img_1.jpg" alt="photo Mark" width="264" />
               <h3 class="team-subtitle">Mark Guerrero</h3>
               <p class="team-text">Product Designer</p>
               <ul class="team-soc-list list">
@@ -166,8 +171,9 @@
             </div>
           </li>
           <li class="team-list-item">
+            <img srcset="./images/Tom@1x-264.jpg 264w, ./images/Tom@2x-528.jpg 528w" sizes="264px"
+              src="./images/Tom@1x-264.jpg" alt="Tom's photo">
             <div class="team-socials">
-              <img src="./images/img_2.jpg" alt="photo Ford" width="264" />
               <h3 class="team-subtitle">Tom Ford</h3>
               <p class="team-text">Frontend Developer</p>
               <ul class="team-soc-list list">
@@ -197,8 +203,9 @@
             </div>
           </li>
           <li class="team-list-item">
+            <img srcset="./images/Camila@1x-264.jpg 264w, ./images/Camila@2x-528.jpg 528w" sizes="264px"
+              src="./images/Camila@1x-264.jpg" alt="Camila's photo">
             <div class="team-socials">
-              <img src="./images/img_3.jpg" alt="photo Camila" width="264" />
               <h3 class="team-subtitle">Camila Garcia</h3>
               <p class="team-text">Marketing</p>
               <ul class="team-soc-list list">
@@ -227,8 +234,9 @@
             </div>
           </li>
           <li class="team-list-item">
+            <img srcset="./images/Daniel@1x-264.jpg 264w, ./images/Daniel@2x-528.jpg 528w" sizes="264px"
+              src="./images/Daniel@1x-264.jpg" alt="Daniel's photo">
             <div class="team-socials">
-              <img src="./images/img_4.jpg" alt="photo Daniel" width="264" />
               <h3 class="team-subtitle">Daniel Wilson</h3>
               <p class="team-text">UI Designer</p>
               <ul class="team-soc-list list">
@@ -379,13 +387,13 @@
           </div>
         </div>
         <div class="form-field">
-          <label for="use-text">Comment</label>
+          <label for="user-text">Comment</label>
           <textarea name="user-text" id="user-text" class="input-message input-form"
             placeholder="Text input"></textarea>
         </div>
         <div class="privacy-policy">
           <input type="checkbox" name="accept" value="true" id="accept" class="checkbox visually-hidden">
-          <label for="accept"><span class="icon-accept"><svg width="10" height="8">
+          <label for="accept" class="accept"><span class="icon-accept"><svg width="10" height="8">
                 <use href="./images/icons.svg#icon-accept"></use>
               </svg></span> I accept the terms and conditions of the <span><a href="#" class="policy">Privacy
                 Policy</a></span></label>
@@ -395,6 +403,67 @@
 
     </div>
   </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="modal-close js-close-menu" type="button">
+      <svg class="menu-icon" width="8px" height="8px">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link ">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#contacts" class="mobile-menu-link current">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="mobile-menu-contacts">
+      <ul class="mobile-contact-list list">
+        <li class="monile-list-item">
+          <a class="mobile-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="monile-list-item">
+          <a class="mobile-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+    </address>
+    <div class="mobile-social-contacts">
+      <ul class="mobile-socials-list list">
+        <li class="soc-item">
+          <a href="" class="soc-link"><svg class="team-social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-item">
+          <a href="" class="soc-link"><svg class="team-social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-item">
+          <a href="" class="soc-link"><svg class="team-social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-item">
+          <a href="" class="soc-link"><svg class="team-social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 </html>
