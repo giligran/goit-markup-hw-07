@@ -669,6 +669,11 @@ screen and (min-resolution: 2dppx) {
     line-height: calc(40 / 36);
     margin-bottom: 40px;
     color: var(--navy-blue);
+    transition: color 250ms var(--cubic);
+}
+
+.mobile-menu-link:is(:hover,:focus) {
+    color: var(--ocean-color);
 }
 
 .mobile-menu-item>.current {
