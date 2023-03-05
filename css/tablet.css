@@ -45,7 +45,9 @@
     color: var(--ocean-color);
 }
 
-
+.current {
+    color: var(--ocean-color);
+}
 
 .current::after {
 
@@ -81,6 +83,15 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--slate-color);
+    transition: color 250ms var(--cubic);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    color: var(--ocean-color);
 }
 
 .menu-btn {
