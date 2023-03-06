@@ -75,13 +75,13 @@ button {
 /* header */
 
 .header {
+    min-height: 70px;
+    padding-top: 24px;
     border: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header>.container {
-    min-height: 70px;
-    padding-top: 24px;
     display: flex;
     align-items: start;
 }
@@ -185,9 +185,9 @@ screen and (min-resolution: 2dppx) {
     background-color: var(--ocean-color);
 }
 
-.feutures>.container,
-.clients>.container,
-.footer>.container {
+.feutures,
+.clients,
+.footer {
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -220,7 +220,7 @@ screen and (min-resolution: 2dppx) {
     display: none;
 }
 
-.team>.container {
+.team {
     padding-top: 96px;
     padding-bottom: 128px;
 
@@ -702,10 +702,10 @@ screen and (min-resolution: 2dppx) {
 }
 
 .mobile-socials-list {
-    justify-content: center;
     display: flex;
-    gap: calc((100% - 160px) / 3);
-}
+    justify-content: space-between;
+    max-width: 328px;
+    }
 
 .menu-container.is-open {
     transform: translateX(0);

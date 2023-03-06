@@ -137,8 +137,8 @@ screen and (min-resolution: 2dppx) {
 
     /* team */
 
-.team>.container {
-    padding-bottom: 104px;
+.team {
+    padding-bottom: 152px;
 }
 
 .team-list {
@@ -154,7 +154,7 @@ screen and (min-resolution: 2dppx) {
 
     /* clients */
 
-.clients>.container {
+.clients {
     padding-left: 108px;
     padding-right: 108px;
 }

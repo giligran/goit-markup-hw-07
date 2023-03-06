@@ -40,6 +40,10 @@
     gap: 40px;
 }
 
+.contact-link {
+    font-size: 16px;
+}
+
 /* main */
     /* hero */
 .hero {
@@ -92,6 +96,15 @@ screen and (min-resolution: 2dppx) {
     border-radius: 4px;
 }
 
+
+.feutures-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.feutures-text {
+    font-weight: 400;
+}
 /* work */
 
 .work {
@@ -109,12 +122,13 @@ screen and (min-resolution: 2dppx) {
     max-width: calc((100% - 48) / 3);
 }
 
-/* clients */
+/* team */
 
-.clients>.container {
-    padding-left: 16px;
-    padding-right: 16px;
+.team {
+    background-color: #F4F4FD;
 }
+
+/* clients */
 
 .client-list-item {
     max-width: calc((100% - 120px) / 6) ;
@@ -122,11 +136,23 @@ screen and (min-resolution: 2dppx) {
 
 /* footer  */
 
+
+
 .footer>.container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 100px 16px;
+    flex-wrap: nowrap;
+}
+
+.copy,
+.media-list {
+    margin-bottom: 0;
+}
+
+.copy {
+    margin-right: 120px;
 }
 
 .footer-form {
     margin-left: 80px;
 }
+
