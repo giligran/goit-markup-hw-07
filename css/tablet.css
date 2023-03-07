@@ -130,6 +130,10 @@ screen and (min-resolution: 2dppx) {
     gap: 72px 24px;
 }
 
+.feutures-subtitle {
+    text-align: left;
+}
+
 .feutures-part {
     max-width: calc((100% - 24px) / 2);
     margin-bottom: 0px;
