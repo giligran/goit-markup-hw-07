@@ -16,12 +16,10 @@
 }
 /* header */
 
-.header>.container {
-    align-items: center;
-    min-height: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-} 
+
+.header {
+        min-height: 76px;
+}
 
 .header-logo {
     line-height: 1.33;
@@ -68,7 +66,7 @@ screen and (min-resolution: 2dppx) {
 
 /* feutures  */
 
-.feutures>.container {
+.feutures {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -98,6 +96,7 @@ screen and (min-resolution: 2dppx) {
 
 
 .feutures-subtitle {
+    text-align: left;
     font-size: 20px;
     line-height: 1.2;
 }
@@ -125,6 +124,8 @@ screen and (min-resolution: 2dppx) {
 /* team */
 
 .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #F4F4FD;
 }
 
@@ -138,8 +139,12 @@ screen and (min-resolution: 2dppx) {
 
 
 
-.footer>.container {
+.footer {
     padding: 100px 16px;
+    flex-wrap: nowrap;
+}
+
+.footer>.container {
     flex-wrap: nowrap;
 }
 

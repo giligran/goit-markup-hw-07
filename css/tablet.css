@@ -139,6 +139,7 @@ screen and (min-resolution: 2dppx) {
 
 .team {
     padding-bottom: 152px;
+    background: #F4F4FD;
 }
 
 .team-list {
@@ -164,15 +165,19 @@ screen and (min-resolution: 2dppx) {
 }
 
 .client-list-item {
-    max-width: calc((100% - 48px) / 3);
+    max-width: 168px;
 }
 
     /* footer */
 
-.footer>.container {
-    display: flex;
+.footer {
     padding-left: 108px;
     padding-right: 108px;
+}
+
+.footer>.container {
+    display: flex;
+
     flex-wrap: wrap;
 }
 
