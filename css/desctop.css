@@ -130,8 +130,15 @@ screen and (min-resolution: 2dppx) {
 
 /* clients */
 
+
+
+.client-list {
+    gap: 24px;
+}
+
 .client-list-item {
     max-width: calc((100% - 120px) / 6) ;
+
 }
 
 /* footer  */
